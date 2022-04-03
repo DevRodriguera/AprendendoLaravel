@@ -18,8 +18,8 @@
     <!-- Fontes do Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap" rel="stylesheet">
+   
     <style>
         #items-list{
     list-style: none;
@@ -29,12 +29,11 @@
 
 </head>
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="collapse navbar-collapse" id="navbar">
                 <a href="#" class="navbar-brand">
-                    <ion-icon name="logo-laravel"></ion-icon>
+                    
                 </a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -43,12 +42,28 @@
                     <li class="nav-item">
                         <a href="/events/create" class="nav-link">Criar Eventos</a>
                     </li>
+                    @auth
                     <li class="nav-item">
-                        <a href="" class="nav-link">Entrar</a>
+                        <a href="/" class="nav-link">Meus eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Cadastrar</a>
+                        <form action="/logout" method="POST">
+                            @csrf
+                            <a href="/logout"
+                            class="nav-link"
+                            onclick="event.preventDefault();
+                            this.closest('form').submit()">Sair</a>
+                        </form>
                     </li>
+                    @endauth
+                    @guest
+                    <li class="nav-item">
+                        <a href="/login" class="nav-link">Entrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/register" class="nav-link">Cadastrar</a>
+                    </li>
+                    @endguest
                 </ul>
             </div>
         </nav>
