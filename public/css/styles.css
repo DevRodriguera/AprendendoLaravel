@@ -6,6 +6,7 @@ body{
     min-height: 100vh;
     padding-bottom: 100px;
     position: relative;
+    background-color: #78e491;
 }
 
 header{
@@ -19,6 +20,7 @@ header{
 
 .container-fluid{
     padding: 0;
+    background-color: #155724;
 }
 
 .btn-primary{
