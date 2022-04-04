@@ -13,14 +13,14 @@
             <h1>{{ $event->title }}</h1>
             <p class="event-city"><ion-icon name="location-outline"></ion-icon>{{$event->city}}</p>
             <p class="events-participants"><ion-icon name="people-outline"></ion-icon>X Participantes</p>
-            <p class="events-owner"><ion-icon name="star-outline"></ion-icon>Dono do evento</p>
+            <p class="events-owner"><ion-icon name="star-outline"></ion-icon>{{$eventOwner['name']}}</p>
+            <a href="#" class="btn btn-primary" id="event-submit">Confirmar presença</a>
             <h3>O evento conta com:</h3>
-            <ul class="items-list">
+            <ul class="items-list" style="list-style: none; padding-left: 0;">
             @foreach($event->items as $item)
-                <li><ion-icon name="play-outline"></ion-icon><span>{{$item}}</span></li>
+                <li style="display: flex;"><ion-icon name="play-outline"></ion-icon><span>{{$item}}</span></li>
             @endforeach
             </ul>
-            <a href="#" class="btn btn-primary" id="event-submit">Confirmar presença</a>
         </div>
         <div class="col-md-12" id="description-container">
             <h3>Sobre o evento</h3>
