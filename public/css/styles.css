@@ -196,6 +196,13 @@ header{
     width: 25%;
 }
 
+/*EDIT PAGE*/
+
+.img-preview{
+    width: 100px;
+    margin-top: 20px;
+}
+
 /* FOOTER */
 
 footer{
