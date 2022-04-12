@@ -5,7 +5,7 @@
 @section('content')
 
 <div id="search-container" class="col-md-12">
-    <h1>Busque um evento</h1>
+    <h1>Encontre o evento certo para você!</h1>
     <form action="/" method="GET">
         <input type="text" id="search" name="search" class="form-control" placeholder="Procure um evento">
     </form>

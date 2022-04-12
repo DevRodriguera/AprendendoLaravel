@@ -22,9 +22,9 @@
    
     <style>
         #items-list{
-    list-style: none;
-    padding-left: 0;
-}
+        list-style: none;
+        padding-left: 0;
+    }
     </style>
 
 </head>
@@ -32,8 +32,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="collapse navbar-collapse" id="navbar">
-                <a href="#" class="navbar-brand">
-                    
+                <a href="/" class="navbar-brand">
+                    <img src="/img/icon.png" alt="">
                 </a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -87,10 +87,5 @@
 
     <!-- Bootstrap JS -->
     <script src="/bootstrap/js/bootstrap.bundle.js"></script>
-
-    <!--IONIC ICON-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
 </body>
 </html>

@@ -3,15 +3,15 @@
 }
 
 body{
+    background-color: #fff9f8 !important;
     min-height: 100vh;
     padding-bottom: 100px;
     position: relative;
-    background-color: #78e491;
 }
 
 header{
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
+    background-color: #fff9f8;
+    border-bottom: 1px solid #fff9f8;
 }
 
 .row{
@@ -20,17 +20,17 @@ header{
 
 .container-fluid{
     padding: 0;
-    background-color: #155724;
+    background-color: #155724 !important;
 }
 
 .btn-primary{
-    background-color: #F2A340;
-    border: 2px solid #C28008;
+    background-color: #FD431A !important;
+    border: 1px solid #FD8165 !important;
 }
 
 .btn-primary:hover{
-    background-color: #C28008;
-    border: 2px solid #C28008;
+    background-color: #FD431A !important;
+    border: 2px solid #FD8165 !important;
 }
 
 .msg{
@@ -43,21 +43,30 @@ header{
     padding: 10px;
 }
 
-/* navbar */
+.already-joined-msg{
+    margin: 15px 0;
+    color: #000000;
+    background-color: #f54f0d;
+    border: 1px solid #006d0f;
+    padding: 10px;
+    width: 275px;
+}
+
+/* NAVBAR */
 
 #navbar img{
-    width: 40;
+    width: 60px;
+    padding-left: 30px;
 }
 
 #navbar{
     justify-content: space-between;
-    background-color: #fff;
-    padding: 5px 0;
+    background-color: #fff9f8;
 }
 
 #navbar a{
     font-size: 14px;
-    color: #757575;
+    color: #7D210C;
 }
 
 #navbar :hover{
@@ -65,16 +74,19 @@ header{
 }
 
 #search-container{
-    background-image: url("/img/fundo.jpg") ;
+    background-image: url("/img/backgroundImg.jpg") ;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 400px;
     padding: 50px;
     text-align: center;
 }
 
 #search-container h1{
-    color: orangered;
+    color: #fffaf9;
+    -webkit-text-stroke: 1px #000;
+    text-stroke: 1px #000;
     margin-bottom: 30px;
     font-weight: 900;
 }
@@ -85,7 +97,7 @@ header{
 }
 
 #events-container{
-    padding: 50px;
+    padding: 60px;
 }
 
 #events-container h2{
